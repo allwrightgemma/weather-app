@@ -1,0 +1,91 @@
+h1 {
+  font-weight: 600;
+  color: #24527a;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #24527a;
+  margin-top: 20px;
+}
+
+hr {
+  height: 2px;
+  color: #24527a;
+  margin: 25px auto;
+}
+.weather-app {
+  border: solid 5px #24527a;
+  border-radius: 10px;
+  background: #ecf5f5;
+  padding: 15px 25px 20px;
+  font-family: "Outfit", sans-serif;
+  margin: 20px auto;
+  max-width: 900px;
+}
+.search-button {
+  background: #24527a;
+  color: #fff;
+}
+.weather-description {
+  color: #24527a;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin: 0 auto;
+}
+.unit-link {
+  color: #24527a;
+  font-size: 16px;
+}
+
+.unit-link:hover {
+  color: #5dacbd;
+}
+
+.weather-condition {
+  color: #24527a;
+  text-align: right;
+  font-size: 16px;
+  list-style: none;
+}
+.high-low {
+  font-size: 20px;
+  color: #5dacbd;
+}
+
+.temperature {
+  font-size: 50px;
+  color: #24527a;
+}
+
+.today-weather-icon {
+  font-size: 50px;
+  color: #24527a;
+}
+.day-card {
+  padding: 5px;
+}
+.card {
+  text-align: center;
+  border: solid 3px #5dacbd;
+  padding: 10px 5px 5px;
+  background: #d8e9ec;
+  transition: all 200ms ease-in-out;
+  color: #24527a;
+}
+.card:hover {
+  background: #7ab3c0;
+  border: solid 3px #7ab3c0;
+  color: #e0ebeb;
+}
+
+.weather-icon {
+  font-size: 40px;
+}
+
+#current-location-button {
+  background: #24527a;
+  color: #fff;
+}

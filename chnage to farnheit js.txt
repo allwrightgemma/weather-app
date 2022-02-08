@@ -1,0 +1,19 @@
+function changeToFarenheit() {
+  let highTemp = document.querySelector("#high-temp");
+  highTemp.innerHTML = `66°F`;
+  let lowTemp = document.querySelector("#low-temp");
+  lowTemp.innerHTML = `50°F`;
+}
+
+let farenheitTemp = document.querySelector("#farenheit-link");
+farenheitTemp.addEventListener("click", changeToFarenheit);
+
+function changeToCelsius() {
+  let highTemp = document.querySelector("#high-temp");
+  highTemp.innerHTML = `19°C`;
+  let lowTemp = document.querySelector("#low-temp");
+  lowTemp.innerHTML = `10°C`;
+}
+
+let celsiusTemp = document.querySelector("#celsius-link");
+celsiusTemp.addEventListener("click", changeToCelsius);
