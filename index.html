@@ -25,21 +25,23 @@
   <body>
     <div class="container">
       <div class="weather-app">
-     
-          <form id="location-form"> 
+           <form id="location-form"> 
             <div class="row">
               <div class="col6"  > <button type="button" class="btn" id="current-location-button">Current</button> </div>
                 <div class="col-5 offset-5">
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Enter a location..."
-              id= "location-input"
-            /></div>
-            <div class="col-2">
-            <input class="form-control search-button"
-            type="submit"></div>
-      </div>
+                  <input
+                   class="form-control"
+                   type="search"
+                   placeholder="Enter a location..."
+                   id= "location-input"
+                   />
+                </div>
+              <div class="col-2">
+              <input 
+                class="form-control search-button"
+                type="submit" />
+              </div>
+            </div>
           </form>
         <h1 id="location"></h1>
         <h2 id=time-now></h2>
@@ -52,7 +54,7 @@
         
        
       
-      <div class="row">
+       <div class="row">
         <div class="col-6">
         <div class="col high-low">High</div>
         <div class="col temperature" id="high-temp"></div>
@@ -68,8 +70,8 @@
         <!-- <div class="col-3 today-weather-icon">
           <i class="fas fa-cloud"></i>
         </div> -->
-      </div>
-      <div class="row"></div>
+        </div>
+     
       <!-- <hr />
       <div class="row">
         <div class="col-sm day-card">
@@ -117,9 +119,11 @@
             </div>
           </div>
         </div>
-      </div> -->
-      </div>
-    </div>
+        </div> -->
+    </div>  
+        <small class="code-link"><a href="https://github.com/allwrightgemma/weather-app" target="_blank" >Open-source code</a> by Gemma Allwright</span>
+  </div>
+  
     <script src=src/index.js></script>
   </body>
 </html>

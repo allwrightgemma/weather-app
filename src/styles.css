@@ -16,14 +16,17 @@ hr {
   color: #24527a;
   margin: 25px auto;
 }
+.container {
+  margin: 20px auto;
+  max-width: 900px;
+}
+
 .weather-app {
   border: solid 5px #24527a;
   border-radius: 10px;
   background: #ecf5f5;
   padding: 15px 25px 20px;
   font-family: "Outfit", sans-serif;
-  margin: 20px auto;
-  max-width: 900px;
 }
 .search-button {
   background: #24527a;
@@ -83,6 +86,11 @@ hr {
 
 .weather-icon {
   font-size: 40px;
+}
+
+.code-link {
+  font-size: 12px;
+  margin-top: 0;
 }
 
 #current-location-button {
