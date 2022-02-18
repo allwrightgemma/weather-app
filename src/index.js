@@ -35,19 +35,25 @@ function showWeather(response) {
   let lowTemperature = Math.round(response.data.main.temp_min);
   let lowTemperatureValue = document.querySelector("#low-temp");
   lowTemperatureValue.innerHTML = `${lowTemperature}°C`;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 
   celsiusTemperatureHigh = Math.round(response.data.main.temp_max);
   celsiusTemperatureLow = Math.round(response.data.main.temp_min);
 
   document.querySelector(".weather-description").innerHTML =
     response.data.weather[0].description;
+
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
   document.querySelector("#humidity").innerHTML = Math.round(
     response.data.main.humidity
   );
-
   document.querySelector("#location").innerHTML = response.data.name;
 }
 
