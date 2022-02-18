@@ -1,14 +1,14 @@
 h1 {
   font-weight: 600;
   color: #24527a;
-  font-size: 28px;
+  font-size: 24px;
   margin-top: 20px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 16px;
   color: #24527a;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 hr {
@@ -18,7 +18,7 @@ hr {
 }
 .container {
   margin: 20px auto;
-  max-width: 900px;
+  max-width: 600px;
 }
 
 .weather-app {
@@ -31,13 +31,20 @@ hr {
 .search-button {
   background: #24527a;
   color: #fff;
+  text-align: center;
 }
 .weather-description {
   color: #24527a;
   text-transform: capitalize;
   font-size: 16px;
-  margin: 0 auto;
+  margin: 0 auto 10px;
 }
+
+.temperature-option {
+  color: #24527a;
+  margin: 10px 0;
+}
+
 .unit-link {
   color: #24527a;
   font-size: 16px;
@@ -50,21 +57,21 @@ hr {
 .weather-condition {
   color: #24527a;
   text-align: right;
-  font-size: 16px;
+  font-size: 14px;
   list-style: none;
 }
 .high-low {
-  font-size: 20px;
+  font-size: 16px;
   color: #5dacbd;
 }
 
 .temperature {
-  font-size: 50px;
+  font-size: 35px;
   color: #24527a;
 }
 
 .today-weather-icon {
-  font-size: 50px;
+  font-size: 35px;
   color: #24527a;
 }
 .day-card {
@@ -96,4 +103,14 @@ hr {
 #current-location-button {
   background: #24527a;
   color: #fff;
+}
+
+.temperature-option .active {
+  color: #24527a;
+  cursor: default;
+  text-decoration: none;
+}
+
+.temperature-option .active:hover {
+  text-decoration: none;
 }

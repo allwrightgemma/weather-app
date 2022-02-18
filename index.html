@@ -24,11 +24,11 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
+      <div class="weather-app clearfix">
            <form id="location-form"> 
             <div class="row">
-              <div class="col6"  > <button type="button" class="btn" id="current-location-button">Current</button> </div>
-                <div class="col-5 offset-5">
+              <div class="col float-start"  > <button type="button" class="btn" id="current-location-button">Current</button> </div>
+                <div class="col-6 float-end">
                   <input
                    class="form-control"
                    type="search"
@@ -36,7 +36,7 @@
                    id= "location-input"
                    />
                 </div>
-              <div class="col-2">
+              <div class="col-sm">
               <input 
                 class="form-control search-button"
                 type="submit" />
@@ -48,28 +48,25 @@
        
         
         <p class=" weather-description"></p>
-        <!-- <div class="col-3 offset-5 weather-condition" id="precipitation">Precipitation: 20%</div> -->
-        <p ><a class="unit-link" href="#" id="celsius-link">°C</a> </p>
-        <!-- | <a class="unit-link" href="#" id=farenheit-link>°F</a> -->
+            <div class="temperature-option"><a class="unit-link active" href="#" id="celsius-link">°C</a>|<a class="unit-link" href="#" id=farenheit-link>°F</a></div>
         
-       
-      
+            <br />
+
        <div class="row">
-        <div class="col-6">
-        <div class="col high-low">High</div>
-        <div class="col temperature" id="high-temp"></div>
-        <div class="col high-low">Low</div>
-        <div class="col temperature" id="low-temp"></div>
-        </div>
-        <div class="col-6">
-          <ul>
-         <li class=" weather-condition" id="humidity">Humidity:</li>
-        <li class="weather-condition" id="wind">Wind: </li>
-        </ul>
-        </div>
-        <!-- <div class="col-3 today-weather-icon">
+          <div class="col-1 high-low">High</div>
+          <div class="col-2 temperature" id="high-temp"></div>
+          <div class="col-1 high-low">Low</div>
+          <div class="col-2 temperature" id="low-temp"></div> 
+          <div class="col-1 today-weather-icon">
           <i class="fas fa-cloud"></i>
-        </div> -->
+          </div>
+        
+         <div class="col float-end">
+          <ul>
+         <li class="weather-condition">Humidity: <span id="humidity"></span>%</li>
+         <li class="weather-condition">Wind: <span id="wind"></span> km/h</li>
+         </ul>
+         </div>
         </div>
      
       <!-- <hr />
