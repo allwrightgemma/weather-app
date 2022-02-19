@@ -45,7 +45,12 @@
           </form>
         <h1 id="location"></h1>
         <h2 >Last updated: <span id=time-now></span> </h2>
-       
+       <div class="col float-end">
+          <ul>
+         <li class="weather-condition">Humidity: <span id="humidity"></span>%</li>
+         <li class="weather-condition">Wind: <span id="wind"></span> km/h</li>
+         </ul>
+         </div>
         
         <p class=" weather-description"></p>
             <div class="temperature-option"><a class="unit-link active" href="#" id="celsius-link">°C</a>|<a class="unit-link" href="#" id=farenheit-link>°F</a></div>
@@ -54,22 +59,17 @@
 
        <div class="row">
           <div class="col-1 high-low">High</div>
-          <div class="col-2 temperature" id="high-temp"></div>
+          <div class="col-3 temperature" id="high-temp"></div>
           <div class="col-1 high-low">Low</div>
-          <div class="col-2 temperature" id="low-temp"></div> 
-          <img class="col-3 today-weather-icon" 
+          <div class="col-3 temperature" id="low-temp"></div> 
+          <img class="col-3 float-end today-weather-icon" 
               src="#" 
               alt="#"
               id="icon"
           />
           
         
-         <div class="col-2">
-          <ul>
-         <li class="weather-condition">Humidity: <span id="humidity"></span>%</li>
-         <li class="weather-condition">Wind: <span id="wind"></span> km/h</li>
-         </ul>
-         </div>
+         
         </div>
      
       <!-- <hr />
