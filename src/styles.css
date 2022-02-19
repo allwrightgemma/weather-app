@@ -24,7 +24,7 @@ hr {
 .weather-app {
   border: solid 5px #24527a;
   border-radius: 10px;
-  background: #ecf5f5;
+  background: #9bbfcf;
   padding: 15px 25px 20px;
   font-family: "Outfit", sans-serif;
 }
@@ -35,9 +35,13 @@ hr {
 }
 .weather-description {
   color: #24527a;
-  text-transform: capitalize;
+
   font-size: 16px;
   margin: 0 auto 10px;
+}
+
+.weather-description:first-letter {
+  text-transform: capitalize;
 }
 
 .temperature-option {
@@ -62,7 +66,7 @@ hr {
 }
 .high-low {
   font-size: 16px;
-  color: #5dacbd;
+  color: #3d5972;
 }
 
 .temperature {

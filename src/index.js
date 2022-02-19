@@ -1,31 +1,27 @@
-function changeDate() {
-  let timeNow = document.querySelector("#time-now");
-  timeNow.innerHTML = `${day}, ${hour}:${minutes}`;
+function changeDate(timestamp) {
+  let date = new Date(timestamp);
+
+  let hour = date.getHours();
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+
+  return `${day}, ${hour}:${minutes}`;
 }
-
-let now = new Date();
-
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[now.getDay()];
-
-let hour = now.getHours();
-if (hour < 10) {
-  hour = `0${hour}`;
-}
-let minutes = now.getMinutes();
-if (minutes < 10) {
-  minutes = `0${minutes}`;
-}
-
-changeDate();
 
 function showWeather(response) {
   let highTemperature = Math.round(response.data.main.temp_max);
@@ -35,6 +31,7 @@ function showWeather(response) {
   let lowTemperature = Math.round(response.data.main.temp_min);
   let lowTemperatureValue = document.querySelector("#low-temp");
   lowTemperatureValue.innerHTML = `${lowTemperature}°C`;
+
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
@@ -44,6 +41,9 @@ function showWeather(response) {
 
   celsiusTemperatureHigh = Math.round(response.data.main.temp_max);
   celsiusTemperatureLow = Math.round(response.data.main.temp_min);
+
+  let dateElement = document.querySelector("#time-now");
+  dateElement.innerHTML = changeDate(response.data.dt * 1000);
 
   document.querySelector(".weather-description").innerHTML =
     response.data.weather[0].description;
@@ -58,7 +58,6 @@ function showWeather(response) {
 }
 
 function search(city) {
-  let apiKey = "064c71138727cd858b6ec37d95b7b5d3";
   let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
   axios.get(apiURL).then(showWeather);
 }
@@ -75,7 +74,6 @@ searchForm.addEventListener("submit", changeLocation);
 function showPosition(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
-  let apiKey = "064c71138727cd858b6ec37d95b7b5d3";
   let apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
   axios.get(apiURL).then(showWeather);
 }
@@ -84,6 +82,8 @@ function getPosition(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(showPosition);
 }
+
+let apiKey = "064c71138727cd858b6ec37d95b7b5d3";
 
 let currentButton = document.querySelector("#current-location-button");
 currentButton.addEventListener("click", getPosition);
