@@ -78,25 +78,25 @@ hr {
   font-size: 35px;
   color: #24527a;
 }
-.day-card {
-  padding: 5px;
-}
-.card {
-  text-align: center;
-  border: solid 3px #5dacbd;
-  padding: 10px 5px 5px;
-  background: #d8e9ec;
-  transition: all 200ms ease-in-out;
-  color: #24527a;
-}
-.card:hover {
-  background: #7ab3c0;
-  border: solid 3px #7ab3c0;
-  color: #e0ebeb;
-}
 
 .weather-icon {
   font-size: 40px;
+}
+
+.weather-forecast {
+  text-align: center;
+  font-size: 16px;
+}
+
+.weather-forecast-temperature-max {
+  color: #24527a;
+}
+
+.weather-forecast-temperature-min {
+  color: #3f86c4;
+}
+.weather-forecast-day {
+  color: #24527a;
 }
 
 .code-link {
