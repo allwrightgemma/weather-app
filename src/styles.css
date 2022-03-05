@@ -44,20 +44,6 @@ hr {
   text-transform: capitalize;
 }
 
-.temperature-option {
-  color: #24527a;
-  margin: 10px 0;
-}
-
-.unit-link {
-  color: #24527a;
-  font-size: 16px;
-}
-
-.unit-link:hover {
-  color: #5dacbd;
-}
-
 .weather-condition {
   color: #24527a;
   text-align: right;
