@@ -90,9 +90,6 @@ function showWeather(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
-  celsiusTemperatureHigh = Math.round(response.data.main.temp_max);
-  celsiusTemperatureLow = Math.round(response.data.main.temp_min);
-
   let dateElement = document.querySelector("#time-now");
   dateElement.innerHTML = changeDate(response.data.dt * 1000);
 
@@ -140,37 +137,5 @@ let apiKey = "064c71138727cd858b6ec37d95b7b5d3";
 
 let currentButton = document.querySelector("#current-location-button");
 currentButton.addEventListener("click", getPosition);
-
-function changeToFarenheit(event) {
-  event.preventDefault;
-  let highTemp = document.querySelector("#high-temp");
-  celsiusLink.classList.remove("active");
-  farenheitLink.classList.add("active");
-  let farenheitTempHigh = Math.round((celsiusTemperatureHigh * 9) / 5 + 32);
-  highTemp.innerHTML = `${farenheitTempHigh}°F`;
-
-  let lowTemp = document.querySelector("#low-temp");
-  let farenheitTempLow = Math.round((celsiusTemperatureLow * 9) / 5 + 32);
-  lowTemp.innerHTML = `${farenheitTempLow}°F`;
-}
-
-function changeToCelsius(event) {
-  event.preventDefault;
-  let highTemp = document.querySelector("#high-temp");
-  celsiusLink.classList.add("active");
-  farenheitLink.classList.remove("active");
-  highTemp.innerHTML = `${celsiusTemperatureHigh}°C`;
-  let lowTemp = document.querySelector("#low-temp");
-  lowTemp.innerHTML = `${celsiusTemperatureLow}°C`;
-}
-
-let celsiusTemperatureHigh = null;
-let celsiusTemperatureLow = null;
-
-let farenheitLink = document.querySelector("#farenheit-link");
-farenheitLink.addEventListener("click", changeToFarenheit);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", changeToCelsius);
 
 search("London");
