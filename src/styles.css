@@ -1,106 +1,116 @@
 h1 {
-  font-weight: 600;
-  color: #24527a;
-  font-size: 24px;
-  margin-top: 20px;
+	font-weight: 600;
+	color: #24527a;
+	font-size: 24px;
+	margin-top: 20px;
 }
 
 h2 {
-  font-size: 16px;
-  color: #24527a;
-  margin-top: 5px;
+	font-size: 16px;
+	color: #24527a;
+	margin-top: 5px;
 }
 
 hr {
-  height: 2px;
-  color: #24527a;
-  margin: 25px auto;
+	height: 2px;
+	color: #24527a;
+	margin: 25px auto;
 }
 .container {
-  margin: 20px auto;
-  max-width: 600px;
+	margin: 20px auto;
+	max-width: 600px;
 }
 
 .weather-app {
-  border: solid 5px #24527a;
-  border-radius: 10px;
-  background: #9bbfcf;
-  padding: 15px 25px 20px;
-  font-family: "Outfit", sans-serif;
+	border: solid 3px #24527a;
+	border-radius: 10px;
+	background: #4194dd65;
+	padding: 15px 25px 20px;
+	font-family: 'Outfit', sans-serif;
 }
 .search-button {
-  background: #24527a;
-  color: #fff;
-  text-align: center;
+	background: #24527a;
+	color: #fff;
+	text-align: center;
 }
 .weather-description {
-  color: #24527a;
+	color: #24527a;
 
-  font-size: 16px;
-  margin: 0 auto 10px;
+	font-size: 16px;
+	margin: 0 auto 10px;
 }
 
 .weather-description:first-letter {
-  text-transform: capitalize;
+	text-transform: capitalize;
 }
 
 .weather-condition {
-  color: #24527a;
-  text-align: right;
-  font-size: 14px;
-  list-style: none;
+	color: #24527a;
+	text-align: right;
+	font-size: 14px;
+	list-style: none;
 }
 .high-low {
-  font-size: 16px;
-  color: #3d5972;
+	font-size: 16px;
+	color: #3d5972;
 }
 
 .temperature {
-  font-size: 35px;
-  color: #24527a;
+	font-size: 35px;
+	color: #24527a;
 }
 
 .today-weather-icon {
-  font-size: 35px;
-  color: #24527a;
+	font-size: 35px;
+	color: #24527a;
 }
 
 .weather-icon {
-  font-size: 40px;
+	font-size: 40px;
 }
 
 .weather-forecast {
-  text-align: center;
-  font-size: 16px;
+	text-align: center;
+	font-size: 16px;
 }
 
 .weather-forecast-temperature-max {
-  color: #24527a;
+	color: #24527a;
 }
 
 .weather-forecast-temperature-min {
-  color: #3f86c4;
+	color: #3f86c4;
 }
 .weather-forecast-day {
-  color: #24527a;
+	color: #24527a;
 }
 
 .code-link {
-  font-size: 12px;
-  margin-top: 0;
+	font-size: 12px;
+	margin-top: 0;
+	color: #24527a;
+}
+
+.code-link a {
+	color: #24527a;
+	text-decoration: none;
+}
+
+.code-link a:hover {
+	color: #3f86c4;
 }
 
 #current-location-button {
-  background: #24527a;
-  color: #fff;
+	background: #24527a;
+	color: #fff;
 }
 
 .temperature-option .active {
-  color: #24527a;
-  cursor: default;
-  text-decoration: none;
+	color: #24527a;
+	cursor: default;
+	text-decoration: none;
 }
 
 .temperature-option .active:hover {
-  text-decoration: none;
+	text-decoration: none;
 }
